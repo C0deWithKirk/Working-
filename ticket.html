@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Conf | Your Ticket</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/ticket.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <img src="../assets/logo.svg" alt="Coding Conf logo" width="42" height="42">
+        <span>Coding Conf</span>
+      </a>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main class="container ticket-main">
+    <section class="ticket-heading" aria-labelledby="success-heading">
+      <p class="success-check" aria-hidden="true">&#10003;</p>
+      <h1 id="success-heading">Congrats, <span id="heading-name">Attendee</span>!<br>Your ticket is ready.</h1>
+      <p>Keep this ticket for your Coding Conf event.</p>
+    </section>
+
+    <section class="ticket-card" aria-label="Digital conference ticket">
+      <div class="ticket-left">
+        <div class="ticket-brand">
+          <img src="../assets/logo.svg" alt="" width="58" height="58">
+          <div><h2>Coding Conf</h2><p>October 26, 2026 | Papine, Kgn</p></div>
+        </div>
+        <div class="ticket-person">
+          <img id="ticket-avatar" src="../assets/avatar-placeholder.svg" alt="Attendee avatar" width="76" height="76">
+          <div>
+            <p class="ticket-label">ATTENDEE</p>
+            <p id="ticket-name" class="person-name">Attendee name</p>
+            <a id="ticket-github" href="https://github.com" target="_blank" rel="noopener noreferrer">@username</a>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-right"><span>CODING CONF 2026</span><strong id="ticket-number">#00000</strong></div>
+    </section>
+
+    <div class="ticket-links">
+      <a class="button" href="login.html">Register Another Person</a>
+      <button type="button" id="print-button" class="outline-button">Print Ticket</button>
+    </div>
+  </main>
+  <footer class="site-footer"><p>Copyright 2026 Coding Conf |  Web Programming IA#2</p></footer>
+</body>
+</html>

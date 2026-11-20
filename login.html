@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Conf | Registration</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!--  File for DOM interaction. -->
+  <script src="../js/validation.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <img src="../assets/logo.svg" alt="Coding Conf logo" width="42" height="42">
+        <span>Coding Conf</span>
+      </a>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main class="container form-main">
+    <div class="page-heading">
+      <p class="eyebrow">CODING CONF 2026</p>
+      <h1>Register for Coding Conf</h1>
+      <p>Fill out the form to get your digital ticket.</p>
+    </div>
+
+    <section class="form-box" aria-labelledby="form-title">
+      <h2 id="form-title">Attendee information</h2>
+      <p class="muted">All fields are required.</p>
+      <!-- The HTML form, labels and input attributes. -->
+      <!-- To show our custom error messages. -->
+      <form id="registration-form" novalidate>
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="e.g. Jordan Smith" autocomplete="name" aria-describedby="full-name-error">
+          <p class="error" id="full-name-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="e.g. jordan@example.com" autocomplete="email" aria-describedby="email-error">
+          <p class="error" id="email-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="github">GitHub username</label>
+          <input type="text" id="github" name="github" placeholder="e.g. @jordan-dev" aria-describedby="github-help github-error">
+          <p class="help-text" id="github-help">Start your username with @.</p>
+          <p class="error" id="github-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="avatar">Upload an avatar</label>
+          <div class="upload-box">
+            <input type="file" id="avatar" name="avatar" accept="image/jpeg,image/png" aria-describedby="avatar-help avatar-error">
+            <p class="help-text" id="avatar-help">JPG or PNG only. File must be smaller than 500 KB.</p>
+          </div>
+          <p class="error" id="avatar-error" aria-live="polite"></p>
+        </div>
+
+        <p class="error" id="form-error" role="alert"></p>
+        <button class="button full-button" type="submit">Generate My Ticket</button>
+      </form>
+    </section>
+    <p class="back-text"><a href="index.html">Back to home</a></p>
+  </main>
+  <footer class="site-footer"><p>Copyright 2026 Coding Conf |  Web Programming IA#2</p></footer>
+</body>
+</html>
